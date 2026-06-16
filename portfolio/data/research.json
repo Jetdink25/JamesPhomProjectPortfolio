@@ -1,0 +1,43 @@
+[
+  {
+    "id": "example-research-1",
+    "title": "Your First Research Paper or Study",
+    "subtitle": "Journal Name · Conference Name · or Course",
+    "tags": ["Machine Learning", "NLP", "Survey"],
+    "date": "Spring 2024",
+    "status": "Published",
+    "venue": "Journal / Conference Name",
+    "advisor": "Prof. Advisor Name",
+    "summary": "A 2–3 sentence summary shown on the Research listing page. Describe the topic, your approach, and the main finding or contribution.",
+    "description": "This is the detailed description shown on the individual research page.\n\nDescribe the research question you investigated, the methodology you used, and the context of the work. What gap in the literature did this address?\n\nSummarize your findings, what they mean, and any limitations or future directions.",
+    "highlights": [
+      "Primary finding or contribution of the research",
+      "Methodology or dataset you used",
+      "Impact — citation, award, application of findings, etc."
+    ],
+    "links": [
+      { "label": "Read Paper",      "url": "#" },
+      { "label": "GitHub / Data",   "url": "https://github.com/yourusername/research-1" }
+    ]
+  },
+  {
+    "id": "example-research-2",
+    "title": "Your Second Research Topic",
+    "subtitle": "Ongoing study / Independent Research",
+    "tags": ["Computational Biology", "Statistics"],
+    "date": "Fall 2023",
+    "status": "In Progress",
+    "venue": "Independent",
+    "advisor": "Prof. Advisor Name",
+    "summary": "Brief overview of your second research topic. Two to three sentences describing the question and your approach.",
+    "description": "Full description of the second research item. Replace this placeholder with details about your actual research.\n\nExplain the motivation, data sources, analytical methods, and any preliminary findings you have so far.",
+    "highlights": [
+      "Key insight or finding so far",
+      "Methods or frameworks applied",
+      "Expected outcomes or next steps"
+    ],
+    "links": [
+      { "label": "Preprint",       "url": "#" }
+    ]
+  }
+]
