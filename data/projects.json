@@ -1,39 +1,83 @@
 [
   {
-    "id": "example-project-1",
+    "id": "project-orama",
     "title": "Project Orama",
-    "subtitle": "A short tagline describing what this project does",
-    "tags": ["Solidworks", "FEA", "Generative Design"],
-    "date": "Spring 2024",
+    "subtitle": "Autonomous AI Drone — Mechanical Frame Design",
+    "tags": ["CAD", "3D Printing", "PETG CF", "Generative Design", "FEA", "Fusion 360", "SolidWorks"],
+    "date": "Summer 2023",
     "status": "Completed",
-    "summary": "A 2–3 sentence overview that appears on the Projects listing page. Describe what the project is, what problem it solves, and what you used to build it.",
-    "description": "This is the full description shown on the individual project page. You can write as much detail as you like here.\n\nUse a blank line between paragraphs — each blank line creates a new paragraph when the page renders.\n\nExplain your motivation, methodology, what you learned, and what you are most proud of about this project.",
+    "summary": "A collaborative interdisciplinary project to design and build an autonomous drone capable of detecting obstacles using a Raspberry Pi camera. I served on the mechanical sub-team, designing the drone frame using PETG carbon fiber filament and generative design in Fusion 360.",
+    "description": "Project Orama was a collaborative project where students from various backgrounds worked together to build an autonomous drone capable of detecting obstacles using a Raspberry Pi camera. The project was organized into three main sub-teams — Mechanical, Controls, and Electrical — and I was a member of the mechanical team.\n\nMy primary responsibility was designing the drone frame that would house all of the electronic components. I fabricated frame components using PETG carbon fiber filament via 3D printing, and used generative design tools in Fusion 360 to create an optimized drone arm capable of withstanding the load from the motors.\n\nThe two-layer design placed the Raspberry Pi, AI camera, and UPS (Uninterruptible Power Supply) on the first layer, while the ESC, flight controller board, and battery occupied the second layer. I also performed FEA statics and frequency simulations to identify failure-prone areas under max thrust conditions.\n\nOverall, the project was a strong learning experience in mechanical design for autonomous systems, particularly in applying generative design and FEA to a real hardware constraint problem. Although the drone did not achieve flight within the project timeline due to size constraints, the design goals for the frame were largely met.",
     "highlights": [
-      "Describe a key result or accomplishment here",
-      "List a technology, tool, or technique you applied",
-      "Mention impact — users, accuracy improvement, time saved, etc."
+      "Designed a two-layer drone frame meeting a 100g weight target with a 12\" diagonal motor span",
+      "Applied generative design in Fusion 360 to create lightweight, optimized drone arms from PETG CF",
+      "Performed statics and frequency FEA simulations at max motor thrust of 20N",
+      "3D printed structural components using PETG carbon fiber filament; assembled with heated inserts and FPV standoffs",
+      "Collaborated across Mechanical, Controls, and Electrical sub-teams"
     ],
     "links": [
-      { "label": "GitHub Repository", "url": "https://github.com/yourusername/project-1" },
-      { "label": "Live Demo",         "url": "#" }
+      { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/projects/project-orama" }
     ]
   },
   {
-    "id": "example-project-2",
-    "title": "Your Second Project",
-    "subtitle": "Another tagline for your second project",
-    "tags": ["JavaScript", "React", "APIs"],
+    "id": "knife-project",
+    "title": "Bladesmithing — Lockback Folding Knife",
+    "subtitle": "Mechanics of Materials · Spring Steel · Heat Treatment",
+    "tags": ["Materials Science", "Heat Treatment", "Metallurgy", "Spring Steel", "Mechanics of Materials"],
     "date": "Fall 2023",
-    "status": "In Progress",
-    "summary": "Brief overview of your second project shown on the listing page. Keep this concise — two or three sentences.",
-    "description": "Full description for the second project. Replace this text with actual details about what you built and why.\n\nAdd as many paragraphs as you need. Each paragraph is separated by a blank line.",
+    "status": "Completed",
+    "summary": "A semester-long group project for a Mechanics of Materials course. The goal was to design and fabricate a functional knife from a chosen steel, applying principles from material science and mechanics — including material selection, heat treatment, and final mechanical testing.",
+    "description": "As part of an ENGR 42 (Mechanics of Materials) course project, my group was tasked with designing and fabricating a working knife entirely from scratch. The project spanned the full semester and required planning every step of the process: design, material selection, and developing a heat treatment schedule based on published data.\n\nOur group selected spring steel as our material of choice and used it to create a lockback folding knife. The heat treatment process followed the classical sequence of annealing, quenching, and tempering — each step carefully carried out to achieve the target hardness while avoiding brittleness.\n\nAt the end of the semester, the finished knife was evaluated through a series of tests including Rockwell Hardness (HRC) measurement, a tensile test of the material, and functional tests including chopping and shearing. The project integrated classroom theory around stress, material properties, and failure modes into a tangible, hands-on deliverable.",
     "highlights": [
-      "First key highlight or achievement",
-      "Second highlight — a technology or technique",
-      "Third highlight — an outcome or result"
+      "Designed and fabricated a lockback folding knife from spring steel as part of a team",
+      "Developed a full heat treatment schedule: annealing, quenching, and tempering",
+      "Applied Mechanics of Materials concepts including stress analysis and material property selection",
+      "Final knife evaluated for HRC hardness, tensile strength, chopping, and shearing performance"
     ],
     "links": [
-      { "label": "GitHub Repository", "url": "https://github.com/yourusername/project-2" }
+      { "label": "ENGR 42 Final Report", "url": "https://docs.google.com/document/d/1uYRLwbsd71COMPNm9GC_dJ_kn5ycpkE8L1O6CFRBKpI/edit?usp=sharing" },
+      { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/projects/knife-project" }
+    ]
+  },
+  {
+    "id": "matlab-raspberry-pi",
+    "title": "MATLAB / Raspberry Pi LED Matrix",
+    "subtitle": "Orientation-Controlled Image Display on Sensehat",
+    "tags": ["MATLAB", "Raspberry Pi", "Sensehat", "Embedded Programming", "LED Matrix"],
+    "date": "Spring 2023",
+    "status": "Completed",
+    "summary": "Developed a MATLAB program that displays a custom image on an 8×8 LED matrix connected to a Raspberry Pi Sensehat. The program dynamically rotates the image based on the physical orientation of the Raspberry Pi and input from the onboard joystick.",
+    "description": "For this project in ENGR 7, I developed a MATLAB program capable of rendering a custom image on the 8×8 LED matrix of a Raspberry Pi Sensehat board. The core challenge was making the display dynamic — the image needed to rotate automatically based on the physical orientation of the device and respond to joystick input from the Sensehat.\n\nThe project involved interfacing MATLAB with the Raspberry Pi hardware, reading orientation data from the onboard sensors, and mapping that data to corresponding rotations of the LED matrix output. The joystick input added an additional layer of real-time interaction.\n\nA full project report and a Raspberry Pi setup guide were produced as deliverables, documenting both the code design and the hardware configuration process.",
+    "highlights": [
+      "Built a MATLAB program to render and rotate a custom image on an 8×8 LED matrix",
+      "Integrated Raspberry Pi Sensehat orientation sensors to drive real-time image rotation",
+      "Implemented joystick-based interaction on the Sensehat for additional user control",
+      "Produced a full ENGR 7 project report and a Raspberry Pi setup and user guide"
+    ],
+    "links": [
+      { "label": "ENGR 7 Final Report", "url": "https://docs.google.com/document/d/18SPf2_6LXq8IupQV1nErW7-nss4Wd5wvDn_DRK-dEOY/edit?usp=sharing" },
+      { "label": "Raspberry Pi User Guide", "url": "https://docs.google.com/document/d/1dwyJQ7m5vuq2Uug6V8F9EjbdLwyqStODhaMGJ_dUoU8/edit?usp=sharing" },
+      { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/projects/matlabraspberry-pi-project" }
+    ]
+  },
+  {
+    "id": "matlab-tiny-house",
+    "title": "MATLAB Tiny House Thermal Simulation",
+    "subtitle": "Insulation Analysis via MATLAB & Simulink",
+    "tags": ["MATLAB", "Simulink", "Thermal Analysis", "Heat Transfer", "Engineering Analysis"],
+    "date": "Spring 2023",
+    "status": "Completed",
+    "summary": "Used MATLAB and Simulink to simulate the thermal conditions of a tiny house based on real climate data. Produced a final IEEE-format report analyzing which insulation type performed best across a selection of tiny home configurations.",
+    "description": "This project involved using MATLAB and Simulink to model and simulate the thermal behavior of a tiny house under real-world climate conditions. Climate data was fed into the simulation to evaluate how different insulation types affected interior temperature regulation and energy efficiency.\n\nThe simulation compared several tiny home configurations with different insulation materials, and the results were analyzed to determine which combination offered the best thermal performance under the given climate inputs.\n\nFindings were written up in a formal IEEE-standard report, providing a structured technical analysis of the simulation methodology, assumptions, results, and conclusions.",
+    "highlights": [
+      "Modeled tiny house thermal dynamics using MATLAB and Simulink with real climate data",
+      "Compared multiple insulation types across different tiny home configurations",
+      "Identified the best-performing insulation option based on simulated thermal efficiency",
+      "Produced a final IEEE-format technical report documenting the full analysis"
+    ],
+    "links": [
+      { "label": "IEEE Final Report", "url": "https://docs.google.com/document/d/1_Fyym_ZEfjs8-6rCg_jIRl-EoQQfZLfd/edit?usp=sharing" },
+      { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/projects/matlab-tiny-house-project" }
     ]
   }
 ]

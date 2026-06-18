@@ -1,43 +1,24 @@
 [
   {
-    "id": "example-research-1",
-    "title": "Your First Research Paper or Study",
-    "subtitle": "Journal Name · Conference Name · or Course",
-    "tags": ["Machine Learning", "NLP", "Survey"],
-    "date": "Spring 2024",
-    "status": "Published",
-    "venue": "Journal / Conference Name",
-    "advisor": "Prof. Advisor Name",
-    "summary": "A 2–3 sentence summary shown on the Research listing page. Describe the topic, your approach, and the main finding or contribution.",
-    "description": "This is the detailed description shown on the individual research page.\n\nDescribe the research question you investigated, the methodology you used, and the context of the work. What gap in the literature did this address?\n\nSummarize your findings, what they mean, and any limitations or future directions.",
+    "id": "coated-stainless-steel",
+    "title": "Aluminum-Coated Austenitic Stainless Steel",
+    "subtitle": "REU — Cal Poly Pomona & Mt. San Antonio College",
+    "tags": ["Materials Engineering", "Metallography", "Stainless Steel", "Coating Analysis", "ImageJ", "REU"],
+    "date": "Summer 2022",
+    "status": "Completed",
+    "venue": "Cal Poly Pomona REU (Research Experience for Undergraduates)",
+    "advisor": "Cal Poly Pomona Materials Engineering Lab",
+    "summary": "As part of a summer REU program between Cal Poly Pomona and Mt. San Antonio College, I analyzed aluminum-coated austenitic stainless steel samples to determine the relationship between aluminum coating thickness and the nickel weight percent across different stainless steel grades.",
+    "description": "As a part of a summer REU (Research Experience for Undergraduates) program bridging Cal Poly Pomona and Mt. San Antonio College, I joined a research group focused on materials engineering. My specific task was to analyze substrate aluminum-coated austenitic stainless steel samples — austenitic being a classification of stainless steel defined by its specific chromium and nickel weight percentages.\n\nThe core research question was whether a measurable relationship existed between the thickness of the aluminum coating and the wt% of nickel in different stainless steel grades. Three grades were examined: SS 330 (Ni: 34.0–37.0%), SS 347 (Ni: 9.0–13.0%), and SS 302B (Ni: 8.0–10.0%).\n\nSample preparation followed standard metallographic procedures: each sample was ground through five progressively finer grits of silicon carbide paper — 240, 360, 600, 800, and 1200 grit. After polishing, samples were examined under a metallographic microscope and photographed. Coating thickness measurements were taken from the micrograph images using Fiji/ImageJ software.\n\nThe results indicated that wt% nickel is inversely proportional to aluminum coating thickness — that is, higher nickel content corresponds to thinner aluminum coatings. Findings were presented to a group of undergraduate researchers at the end of the program.",
     "highlights": [
-      "Primary finding or contribution of the research",
-      "Methodology or dataset you used",
-      "Impact — citation, award, application of findings, etc."
+      "Determined that wt% nickel is inversely proportional to aluminum coating thickness across three SS grades",
+      "Prepared metallographic samples through five grits of SiC paper (240–1200 grit) using standard polishing procedures",
+      "Measured coating thickness from optical micrographs using Fiji/ImageJ image analysis software",
+      "Presented findings to a cohort of undergraduate researchers at Cal Poly Pomona",
+      "Gained hands-on experience in metallography, metal etching, and microscopy"
     ],
     "links": [
-      { "label": "Read Paper",      "url": "#" },
-      { "label": "GitHub / Data",   "url": "https://github.com/yourusername/research-1" }
-    ]
-  },
-  {
-    "id": "example-research-2",
-    "title": "Your Second Research Topic",
-    "subtitle": "Ongoing study / Independent Research",
-    "tags": ["Computational Biology", "Statistics"],
-    "date": "Fall 2023",
-    "status": "In Progress",
-    "venue": "Independent",
-    "advisor": "Prof. Advisor Name",
-    "summary": "Brief overview of your second research topic. Two to three sentences describing the question and your approach.",
-    "description": "Full description of the second research item. Replace this placeholder with details about your actual research.\n\nExplain the motivation, data sources, analytical methods, and any preliminary findings you have so far.",
-    "highlights": [
-      "Key insight or finding so far",
-      "Methods or frameworks applied",
-      "Expected outcomes or next steps"
-    ],
-    "links": [
-      { "label": "Preprint",       "url": "#" }
+      { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/research/coated-stainless-steel" }
     ]
   }
 ]
