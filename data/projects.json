@@ -1,9 +1,9 @@
 [
   {
     "id": "example-project-1",
-    "title": "Your First Project",
+    "title": "Project Orama",
     "subtitle": "A short tagline describing what this project does",
-    "tags": ["Python", "Data Science", "Visualization"],
+    "tags": ["Solidworks", "FEA", "Generative Design"],
     "date": "Spring 2024",
     "status": "Completed",
     "summary": "A 2–3 sentence overview that appears on the Projects listing page. Describe what the project is, what problem it solves, and what you used to build it.",
