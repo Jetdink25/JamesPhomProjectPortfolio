@@ -599,6 +599,13 @@ ul    { list-style: none; }
   display: block;
   cursor: zoom-in;
   transition: transform var(--ease);
+  background: var(--color-tag-bg);
+  /* keeps the cell the right size even when image fails to load */
+  min-height: 160px;
+}
+.gallery-item img[src=""],
+.gallery-item img:not([src]) {
+  background: var(--color-tag-bg);
 }
 .gallery-item img:hover,
 .gallery-item video:hover { transform: scale(1.03); }
@@ -619,6 +626,22 @@ ul    { list-style: none; }
   border-radius: var(--r-full);
   pointer-events: none;
   z-index: 2;
+}
+
+/* Broken image placeholder */
+.gallery-broken {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 160px;
+  background: var(--color-tag-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--sp-sm);
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
 }
 
 .gallery-caption {
