@@ -4,8 +4,10 @@
     "title": "Project Orama",
     "subtitle": "Autonomous AI Drone — Mechanical Frame Design",
     "tags": ["CAD", "3D Printing", "PETG CF", "Generative Design", "FEA", "Fusion 360", "SolidWorks"],
-    "date": "Summer 2025",
+    "date": "Summer 2023",
     "status": "Completed",
+    "image": "https://lh3.googleusercontent.com/sitesv/AA5AbUCJrclrNY-CuUou_fCDyOF7Rq8mvnT0CvWXruvyaeunju848BuDmx7CeXGBuswcyaWvqJNyKGdleoTjMUobFMV_HigJVd35hRXnv30aK264bPOFV0hVafSRy2oa087TR9agYVSGeFQ3t-qnzMRBUY-LqNScHvHTg680CKXgYtz2J19eQgUYYzae8_FqTSu_v4eJmLfnL635XO5U_J9pYahHfCRQVRlJKXyA5eLNK7M=w1280",
+    "imageAlt": "Project Orama drone design goals diagram",
     "summary": "A collaborative interdisciplinary project to design and build an autonomous drone capable of detecting obstacles using a Raspberry Pi camera. I served on the mechanical sub-team, designing the drone frame using PETG carbon fiber filament and generative design in Fusion 360.",
     "description": "Project Orama was a collaborative project where students from various backgrounds worked together to build an autonomous drone capable of detecting obstacles using a Raspberry Pi camera. The project was organized into three main sub-teams — Mechanical, Controls, and Electrical — and I was a member of the mechanical team.\n\nMy primary responsibility was designing the drone frame that would house all of the electronic components. I fabricated frame components using PETG carbon fiber filament via 3D printing, and used generative design tools in Fusion 360 to create an optimized drone arm capable of withstanding the load from the motors.\n\nThe two-layer design placed the Raspberry Pi, AI camera, and UPS (Uninterruptible Power Supply) on the first layer, while the ESC, flight controller board, and battery occupied the second layer. I also performed FEA statics and frequency simulations to identify failure-prone areas under max thrust conditions.\n\nOverall, the project was a strong learning experience in mechanical design for autonomous systems, particularly in applying generative design and FEA to a real hardware constraint problem. Although the drone did not achieve flight within the project timeline due to size constraints, the design goals for the frame were largely met.",
     "highlights": [
@@ -14,6 +16,52 @@
       "Performed statics and frequency FEA simulations at max motor thrust of 20N",
       "3D printed structural components using PETG carbon fiber filament; assembled with heated inserts and FPV standoffs",
       "Collaborated across Mechanical, Controls, and Electrical sub-teams"
+    ],
+    "gallery": [
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUCJrclrNY-CuUou_fCDyOF7Rq8mvnT0CvWXruvyaeunju848BuDmx7CeXGBuswcyaWvqJNyKGdleoTjMUobFMV_HigJVd35hRXnv30aK264bPOFV0hVafSRy2oa087TR9agYVSGeFQ3t-qnzMRBUY-LqNScHvHTg680CKXgYtz2J19eQgUYYzae8_FqTSu_v4eJmLfnL635XO5U_J9pYahHfCRQVRlJKXyA5eLNK7M=w1280",
+        "caption": "Design goals: 100g max weight, 12\" diagonal frame"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBM35S28a-IiV8_HkiCTU4I80ihtGZkr-X2aTgdXddR996NplmdJ5c3GFh4gHHrAwOBx8ginF2vdan50VBJ7aLsoSfeQhAqYrVOZJLzfFVXdHZLCBXRuZUvkFpWAVD-EtAIFsEmkInQpDF1txku0-G3e8E_GK7PNuwT0qxdqCpWzb8KcHxomN3gGVe9ZLlfmUvDSp1nNWcC8Ic32CzQOQA3Ub2s6HJSOp9_HSTzQcQ=w1280",
+        "caption": "Two-layer design layout"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUANnQc-BDyryolxCVSE-jNngub8PNOnDtAqfMXRMKsoL6KDXFOMHbL0j6prazmG2Z8f8pEh6JvkOMKIoGIHhuL4ZSRf5cIIqrYK8loLRW5NhIFJkWudeS-Cwi3geF3t8M5Lj7cvGfJO_ZI1YcMHm2i4dVLyTnRMhleakod8ulHCO9RhPYMq4agjvkhXF6plw0OO50vnN0f-POkLkH0tyEI6RskL4SdHblvK8w=w1280",
+        "caption": "Roll of PETG carbon fiber filament"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBs1G3HXyjeV6VZvOpVwYfiSqt9YCMWR6dMVAEpvYbxVrJG41-BweqEU_GCE63js04EX5G4SMibOHSTzMpOgo6A14fKeHEYzZOayOuyf8QDQnVoq7yqhUkiWxpiVsVWU1fFJL9b6OUkVoeUjLetmROOuGVIGGkLdfMz7q26W614KQUdJZq39wOV7SvcHPPpyiDXthd2QAgJPJ7VEJ8NfTonE-UGLOv6en978v7xJv4=w1280",
+        "caption": "Generative design of the drone arm in Fusion 360"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAM5I0tIX2OxChW0dTc2_jz0xIGVBgWJITfs_Gm-2nH4ZcTrVGHSBYT31V2MV-ANG8-QlE5y6hR4g-4euY9K2A-x64aoo18e-x4wivHOmQZQ_GvgyzfWM7EBeFocrNIdq1JmrzTTgRTzNBgyAJU6k9owmoDWfehrZqm3r-1itofUn3RuKu6l4wNV5LI5mZuorgllZCgNzV0OpoLpI3KIU9tC2SjfjUT-b-nBuoSzu0=w1280",
+        "caption": "FEA setup at max motor thrust"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAGC_MpQATmJv_aSF8lBJhADksIuxPPAwZ9N5_TCHJ2OqMFXgfVgSR1136g3COX_MQDu5cN_GJVXGUOkxaHAgbA0A7qQsFFMUE6BBqpDnIpevBYA4yaBd1e49PKsweJzo99XhQpHL0KCKgxUlOBfg-43yelnm8hEccqCNOxR-l2k-D-mVWDkl9pqUlei9B3vOu_rg4kYGrt5FIflEmc-qpB7nwcjtHbdWDZk0xhvGA=w1280",
+        "caption": "Statics simulation at 20N max thrust"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUDcdhQv9KDECLtEDr1E_iN3N8OPgxSx0I5tu7p97e8BsCoVKJrUnOxgFF3hw7OKloV59TopKKg4u-ZVNiAtTy_g7RAD8yntIEIyKT62ZUW-8UESwNzztGjdhtVCn25ATAM0QDccdUoN-4ct5oZiTR-GUpoylCqPZh9CYdYMOHLq0Rw427xfLVCoRbIXRzd_znB_TbDJCvI3-AWd_yWH8CRSczrGB4eJe1XK_tQIHJc=w1280",
+        "caption": "3D printed structural components ready for assembly"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBdXphCRmSM7yIaU9a6O_AZuJ8qgxrriNHqp99lEqUeGzrxQ9HdDP8BeERpOlrOuO1QocsRvgpMgFyaOo6g8_FXY8awYq3EWhQLIn0a99VXNbFA1wG0bdwVVNm2LM9PiMDuW0TbxFtUgjstrX9WIbO7BH81uUzaQCpaZmEV4ZJoowxGh9s8U_QTQCxp9Ig57uOu1-W7GLItOk_ZWOJB7_j0CMKAduvAXjti4WgO=w1280",
+        "caption": "Finished drone arms"
+      },
+      {
+        "url": "assets/orama-fea-frequency.png",
+        "caption": "SolidWorks frequency FEA simulation — full drone assembly"
+      },
+      {
+        "url": "assets/orama-recording-1.mp4",
+        "caption": "Screen recording — CAD / simulation walkthrough"
+      },
+      {
+        "url": "assets/orama-recording-2.mp4",
+        "caption": "Screen recording — detailed FEA results"
+      }
     ],
     "links": [
       { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/projects/project-orama" }
@@ -24,7 +72,7 @@
     "title": "Bladesmithing — Lockback Folding Knife",
     "subtitle": "Mechanics of Materials · Spring Steel · Heat Treatment",
     "tags": ["Materials Science", "Heat Treatment", "Metallurgy", "Spring Steel", "Mechanics of Materials"],
-    "date": "Spring 2025",
+    "date": "Fall 2023",
     "status": "Completed",
     "summary": "A semester-long group project for a Mechanics of Materials course. The goal was to design and fabricate a functional knife from a chosen steel, applying principles from material science and mechanics — including material selection, heat treatment, and final mechanical testing.",
     "description": "As part of an ENGR 42 (Mechanics of Materials) course project, my group was tasked with designing and fabricating a working knife entirely from scratch. The project spanned the full semester and required planning every step of the process: design, material selection, and developing a heat treatment schedule based on published data.\n\nOur group selected spring steel as our material of choice and used it to create a lockback folding knife. The heat treatment process followed the classical sequence of annealing, quenching, and tempering — each step carefully carried out to achieve the target hardness while avoiding brittleness.\n\nAt the end of the semester, the finished knife was evaluated through a series of tests including Rockwell Hardness (HRC) measurement, a tensile test of the material, and functional tests including chopping and shearing. The project integrated classroom theory around stress, material properties, and failure modes into a tangible, hands-on deliverable.",
