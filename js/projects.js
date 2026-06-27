@@ -34,16 +34,24 @@
       .map(t => `<span class="tag">${esc(t)}</span>`)
       .join('');
 
+    const imageBlock = p.image ? `
+      <div class="card-image-wrap">
+        <img src="${esc(p.image)}" alt="${esc(p.imageAlt || p.title)}" loading="lazy">
+      </div>` : '';
+
     return `
       <article class="item-card">
-        <p class="card-date">${esc(p.date || '')}</p>
-        <h2 class="card-title">${esc(p.title)}</h2>
-        ${p.subtitle ? `<p class="card-subtitle">${esc(p.subtitle)}</p>` : ''}
-        ${tags ? `<div class="card-tags">${tags}</div>` : ''}
-        <p class="card-summary">${esc(p.summary || '')}</p>
-        <a href="project.html?id=${encodeURIComponent(p.id)}" class="card-cta">
-          View Project <span class="arrow">→</span>
-        </a>
+        ${imageBlock}
+        <div class="card-body">
+          <p class="card-date">${esc(p.date || '')}</p>
+          <h2 class="card-title">${esc(p.title)}</h2>
+          ${p.subtitle ? `<p class="card-subtitle">${esc(p.subtitle)}</p>` : ''}
+          ${tags ? `<div class="card-tags">${tags}</div>` : ''}
+          <p class="card-summary">${esc(p.summary || '')}</p>
+          <a href="project.html?id=${encodeURIComponent(p.id)}" class="card-cta">
+            View Project <span class="arrow">→</span>
+          </a>
+        </div>
       </article>`;
   }
 

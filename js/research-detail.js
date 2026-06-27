@@ -58,11 +58,42 @@
       .map(para => `<p>${esc(para.trim())}</p>`)
       .join('');
 
+    const heroImage = item.image ? `
+      <div class="detail-hero-image">
+        <img src="${esc(item.image)}" alt="${esc(item.imageAlt || item.title)}">
+      </div>` : '';
+
+    const gallery = (item.gallery && item.gallery.length) ? `
+      <div class="gallery-block">
+        <p class="gallery-label">Photo & Video Gallery</p>
+        <div class="gallery-grid">
+          ${item.gallery.map(g => {
+            const isVideo = /\.(mp4|webm|ogg|mov)$/i.test(g.url);
+            if (isVideo) {
+              return `
+                <figure class="gallery-item" data-lightbox-src="${esc(g.url)}" data-lightbox-type="video" style="cursor:zoom-in;">
+                  <span class="gallery-video-badge">▶ VIDEO</span>
+                  <video src="${esc(g.url)}" muted playsinline loop
+                         style="width:100%;aspect-ratio:4/3;object-fit:cover;pointer-events:none;"></video>
+                  ${g.caption ? `<figcaption class="gallery-caption">${esc(g.caption)}</figcaption>` : ''}
+                </figure>`;
+            } else {
+              return `
+                <figure class="gallery-item" data-lightbox-src="${esc(g.url)}" data-lightbox-type="image" style="cursor:zoom-in;">
+                  <img src="${esc(g.url)}" alt="${esc(g.caption || item.title)}" loading="lazy">
+                  ${g.caption ? `<figcaption class="gallery-caption">${esc(g.caption)}</figcaption>` : ''}
+                </figure>`;
+            }
+          }).join('')}
+        </div>
+      </div>` : '';
+
     container.innerHTML = `
       <div class="detail-layout">
 
         <!-- Main content -->
         <div class="detail-main">
+          ${heroImage}
           <p class="detail-date">${esc(item.date || '')}</p>
           <h1 class="detail-title">${esc(item.title)}</h1>
           ${item.subtitle ? `<p class="detail-subtitle">${esc(item.subtitle)}</p>` : ''}
@@ -75,6 +106,8 @@
               <p class="highlights-label">Key Findings / Contributions</p>
               <ul class="highlights-list">${highlights}</ul>
             </div>` : ''}
+
+          ${gallery}
 
           ${links ? `<div class="btn-row">${links}</div>` : ''}
         </div>
@@ -111,7 +144,50 @@
           </a>
         </aside>
 
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox-overlay" id="lightbox">
+        <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
+        <div id="lightbox-inner"></div>
       </div>`;
+
+    initLightbox();
+  }
+
+  /* ── Lightbox behavior ─────────────────────────────────── */
+  function initLightbox() {
+    const overlay  = document.getElementById('lightbox');
+    const closeBtn = document.getElementById('lightbox-close');
+    const lbInner  = document.getElementById('lightbox-inner');
+    if (!overlay || !lbInner) return;
+
+    // Play thumbnail videos on hover
+    document.querySelectorAll('.gallery-item video').forEach(vid => {
+      const fig = vid.closest('.gallery-item');
+      fig.addEventListener('mouseenter', () => vid.play());
+      fig.addEventListener('mouseleave', () => { vid.pause(); vid.currentTime = 0; });
+    });
+
+    // Click to open lightbox
+    document.querySelectorAll('.gallery-item[data-lightbox-src]').forEach(fig => {
+      fig.addEventListener('click', () => {
+        const src  = fig.getAttribute('data-lightbox-src');
+        const type = fig.getAttribute('data-lightbox-type');
+        lbInner.innerHTML = type === 'video'
+          ? `<video src="${esc(src)}" controls autoplay style="max-width:100%;max-height:85vh;border-radius:8px;"></video>`
+          : `<img src="${esc(src)}" alt="" style="max-width:100%;max-height:85vh;border-radius:8px;">`;
+        overlay.classList.add('open');
+      });
+    });
+
+    function close() {
+      overlay.classList.remove('open');
+      lbInner.innerHTML = '';
+    }
+    overlay.addEventListener('click', e => { if (e.target === overlay) close(); });
+    closeBtn.addEventListener('click', close);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') close(); });
   }
 
   /* ── Not Found ─────────────────────────────────────────── */
