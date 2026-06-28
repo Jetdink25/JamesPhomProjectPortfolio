@@ -8,6 +8,8 @@
     "status": "Completed",
     "venue": "Cal Poly Pomona REU (Research Experience for Undergraduates)",
     "advisor": "Cal Poly Pomona Materials Engineering Lab",
+    "image": "https://lh3.googleusercontent.com/sitesv/AA5AbUDu106dOSsFhqlmFqSRAe4Gf2qpgGvyx9dWBHpyYPg1YJkrf8j7rQiCkodFBvvEZOTSZZIB-9hoeUMa4vEfQsubP8Mr3y7DpliimUJZYSW1Ffz44DDvNBjfKwYxTGU-4aGl6ZP9__vajxo-DwJj4d-t6EoKPXxFf4wDRjWFBJjIY4-6Sf9EHs2IS9KUt6T_QkdfSR5oU0JOAtCnRAKlpf6dn50Uw1Q01qI7rDBg=w1280",
+    "imageAlt": "Stainless steel sample preparation for coating analysis",
     "summary": "As part of a summer REU program between Cal Poly Pomona and Mt. San Antonio College, I analyzed aluminum-coated austenitic stainless steel samples to determine the relationship between aluminum coating thickness and the nickel weight percent across different stainless steel grades.",
     "description": "As a part of a summer REU (Research Experience for Undergraduates) program bridging Cal Poly Pomona and Mt. San Antonio College, I joined a research group focused on materials engineering. My specific task was to analyze substrate aluminum-coated austenitic stainless steel samples — austenitic being a classification of stainless steel defined by its specific chromium and nickel weight percentages.\n\nThe core research question was whether a measurable relationship existed between the thickness of the aluminum coating and the wt% of nickel in different stainless steel grades. Three grades were examined: SS 330 (Ni: 34.0–37.0%), SS 347 (Ni: 9.0–13.0%), and SS 302B (Ni: 8.0–10.0%).\n\nSample preparation followed standard metallographic procedures: each sample was ground through five progressively finer grits of silicon carbide paper — 240, 360, 600, 800, and 1200 grit. After polishing, samples were examined under a metallographic microscope and photographed. Coating thickness measurements were taken from the micrograph images using Fiji/ImageJ software.\n\nThe results indicated that wt% nickel is inversely proportional to aluminum coating thickness — that is, higher nickel content corresponds to thinner aluminum coatings. Findings were presented to a group of undergraduate researchers at the end of the program.",
     "highlights": [
@@ -16,6 +18,40 @@
       "Measured coating thickness from optical micrographs using Fiji/ImageJ image analysis software",
       "Presented findings to a cohort of undergraduate researchers at Cal Poly Pomona",
       "Gained hands-on experience in metallography, metal etching, and microscopy"
+    ],
+    "gallery": [
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUCtOpo0OjHIbJyczGmxPufSKUQ4UrtiUW8aB1oLn-D-WzCJX7nUgT8seRoaHqDdQv2VUYzhZJrQPwiZijWtxxBXPhgSwK7UmmN405SeRKCv5_RnQVBR90_qYmUZsokXp-a1MKsGaMah9LJ8Jn3dXhYtj15sCQchplA8iRwUBqp0RiwJS7EVMdWFhWpJwDRRjqffeuRzpo6iP4FAI0JhIZM4AJDVbuWGqmEc2m1QArw=w1280",
+        "caption": "240 grit polish"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUDdISSdy1C2KyqNVP0tSU7tWcMSB_tqGbegr0EgjcUvNxEKY-glKVHI0mJpahqKd9AjP7g8Acb0duXNoKp_kXxBELJWzrxiGaiquljAe6hxRyvqQMYopsJJWjrAgpHb9cM7tYPS2F-hxp0hmUjFuA3D77yycZu66sK3RpQaDdyxwFcpAWs0NcWoK8rOxB9o8MkxgjOmuB9WlsBWzLFzv8qTPI3J2WREBKnRgHdqEa4=w1280",
+        "caption": "360 grit polish"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAqL6B_DYXgTKrYqJuT2oo6nNbcmi6bxwEJeYsbmLFc74ah7P_wviEU1zsUztKzJL8fno8svwKMeGtd_T2zCOmEbhp4Nxbu-fYFwtPeojTt1_drZqxl4B-hwProv5E_F2o2PcpSnQOwZaoLJGMYvyYMllZoZuclcCT5CONcIUPrgEUhRxwcklfdmBoEIv9uny2XmYC6OLj8uyqd91j78DBp6V8bGkzRlwGDucBSG28=w1280",
+        "caption": "600 grit polish"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAZwC4RcFyd8_24QpGYFGLkQ7Gu4rktfeCCwefXtIU_MFOpXy164SS9ex-JFXpbvuV-bnHVfWKHHS8jiArprXMDruqdZjoueg3YxcD6nN8BHMHpMfnEf2imas_T6eol8LW-zB4PNZlfv1kKHR0TmcokiWEn1wJ0mxHTVxeRt1gzNkgqRzV6Ls3PosRF26plNP8KGPTxetM3IBxr9TBEdECYMLEBKf7UjRp_wbkPJJM=w1280",
+        "caption": "800 / 1200 grit final polish"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUDpHu5eeyj9McVYpTbn-CDXliyGMb8VhLNC4IKoHpPlZyI7i509OsMfISMr6MLmgsMfEY2YWFjBVqNGLG3U7Hly11VM1ZOa9v9CzQqdPbIfkfqRTM59pmObK73iwLMxAZKraoZDFdjZIldcJZ_ghB_F0k6l-Mrk-2ZY8vGh0sads45eTHcQ2NupFpEos-SPibLKhl8tgcNa-9gug1ZIi3-IZIhSkXYYHzmCq12gYOo=w1280",
+        "caption": "Stainless steel (SS) micrographs"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUDvwO8a3MMnyCjSt8bFEhsQ7UE7t8JPoBYYegvmi8wpLvJdecPDA3p-wH64B65IIrfhiqcJhCjeQNKglbEdMQPQnqKdrdDShp97l2of_NIC9aMNszMNcntEIkmGiJwijbQHLvl5dGNFbwCQJFEUxsEluykRxpgCbJIpSdbabof9HKL_5d_6Ng10F2cSxQjN4Wdikr9mXrirmk-IQtjNJKh3Rc0J1Q9lEICvWRSIRpc=w1280",
+        "caption": "SS 330 — Ni: 34.0–37.0%, Cr: 17.0–20.0%"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAtzbJKtlY7yIJg5RxED_kIKs5Jm_amYBkdah59dOE3HzZG3zuCYATkHydctA4SEiNSFR2fqx-gDNDBH2RYX3iAwH1p98olA-sa2axfSj9BSfL9016S8-HmZ5zmA5MydOHV9FaScxDtS8hn8gYmRenqweQmPLzhI6c2u4WOq3knxBIj1RwIlKt7KvbslkGgUnt1urIUI6cP9xQqij0gAZq5HnEr5N7o1s31K0yPNJk=w1280",
+        "caption": "SS 347 — Ni: 9.0–13.0%, Cr: 17.0–20.0%"
+      },
+      {
+        "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUCdG2VIl5ItuzW5JlNjt2TAwyXjx413l1JetnqlnJel0VLz_-2NIC-bf8uNi4UBjzIqoSs0VdtrBWJqDY3AIsU5jMkq0gfRYaksBnUyulJA0fEknFa-_7neX6s5fdake_ojvW21auJuE-FDL3Ds8cdw2VHfyw6NUFxn5M7QjK1PoEe4i38Yu6GmzIn_Sg7HKAYMCr0ebWoY1psLUYgRchzqtc2_yOhpGFFb6g=w1280",
+        "caption": "SS 302B — Ni: 8.0–10.0%, Cr: 17.0–20.0%"
+      }
     ],
     "links": [
       { "label": "View on Original Portfolio", "url": "https://sites.google.com/view/jamesphommportfolio/research/coated-stainless-steel" }
