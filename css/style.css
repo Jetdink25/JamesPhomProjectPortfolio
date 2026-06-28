@@ -750,7 +750,155 @@ ul    { list-style: none; }
 .detail-sidebar .info-card { margin-bottom: var(--sp-lg); }
 
 /* ============================================================
-   STATES
+   PROJECT DETAIL — 4-SECTION FORMAT
+   ============================================================ */
+.project-section {
+  margin-bottom: var(--sp-3xl);
+  padding-bottom: var(--sp-3xl);
+  border-bottom: 1px solid var(--color-border);
+}
+.project-section:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.project-section-heading {
+  display: flex;
+  align-items: baseline;
+  gap: var(--sp-md);
+  margin-bottom: var(--sp-xl);
+}
+.project-section-num {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--color-blue);
+  letter-spacing: 0.1em;
+  flex-shrink: 0;
+}
+.project-section-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: var(--color-navy);
+  padding-bottom: var(--sp-sm);
+  border-bottom: 2px solid var(--color-blue-light);
+  flex: 1;
+}
+
+/* Design Goals list */
+.goals-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+}
+.goals-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-md);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+.goals-list li::before {
+  content: '';
+  flex-shrink: 0;
+  width: 7px;
+  height: 7px;
+  border: 2px solid var(--color-blue);
+  border-radius: 50%;
+  margin-top: 8px;
+}
+
+/* Design Process text */
+.process-text {
+  font-size: 1rem;
+  line-height: 1.85;
+  color: var(--color-text);
+  margin-bottom: var(--sp-xl);
+}
+.process-text p { margin-bottom: var(--sp-lg); }
+.process-text p:last-child { margin-bottom: 0; }
+
+/* Challenges list */
+.challenges-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-md);
+  margin-bottom: var(--sp-xl);
+}
+.challenges-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-md);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--color-text);
+  padding: var(--sp-md) var(--sp-lg);
+  background: #FFF7ED;
+  border-left: 3px solid #F97316;
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+}
+.challenges-list li::before {
+  content: '!';
+  flex-shrink: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #F97316;
+  margin-top: 2px;
+}
+
+/* Reflection two-column sub-sections */
+.reflection-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--sp-xl);
+}
+.reflection-block { }
+.reflection-sub-label {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-muted);
+  margin-bottom: var(--sp-md);
+}
+.reflection-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-sm);
+}
+.reflection-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--sp-sm);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--color-text);
+}
+.reflection-list.learned li::before {
+  content: '✓';
+  color: #16A34A;
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.reflection-list.improvements li::before {
+  content: '↗';
+  color: var(--color-blue);
+  font-weight: 700;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 768px) {
+  .reflection-grid { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   PROJECT DETAIL SECTIONS
    ============================================================ */
 .loading-state {
   text-align: center;
