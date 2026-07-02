@@ -9,7 +9,7 @@
     "status": "Completed",
     "image": "assets/orama-fea-frequency.png",
     "imageAlt": "SolidWorks frequency FEA simulation of Project Orama drone",
-    "summary": "A collaborative interdisciplinary project to design and build an autonomous drone capable of detecting obstacles using a Raspberry Pi camera. I served on the mechanical sub-team, designing the drone frame using PETG carbon fiber filament and generative design in Fusion 360.",
+    "summary": "A collaborative interdisciplinary project to design and build an autonomous drone capable of detecting obstacles using a Raspberry Pi camera. I served on the mechanical sub-team, designing the frame and running FEA to validate stiffness and resonant modes.",
 
     "designGoals": [
       "Maximum frame weight of 100g",
@@ -21,7 +21,7 @@
     ],
 
     "designProcess": {
-      "text": "The mechanical sub-team began by identifying the electronic components that needed to be housed and defining a two-layer stacking arrangement. The top layer holds the Raspberry Pi, AI camera, and UPS; the bottom layer holds the ESC, flight controller board, and battery. This separation kept the wiring manageable and the center of gravity low.\n\nDrone arms were optimized using generative design in Fusion 360, which produced a lightweight curved geometry capable of distributing motor thrust loads across the arm cross-section. The output geometry was then cleaned up for printability and exported for FDM printing in PETG carbon fiber filament.\n\nFEA simulations were run in SolidWorks — both a statics simulation at maximum motor thrust (20N per arm) and a frequency simulation to identify resonant modes that could cause structural failure in flight. The FEA results guided final wall thickness decisions on the arm and center plate.",
+      "text": "The mechanical sub-team began by identifying the electronic components that needed to be housed and defining a two-layer stacking arrangement. The top layer holds the Raspberry Pi, AI camera, and UPS, while the bottom layer contains the ESCs, flight controller, and battery. We iterated on stacking, mounting points, and cable routing before generating topology options and validating them with FEA.",
       "media": [
         {
           "url": "assets/orama-recording-1.mp4",
@@ -77,7 +77,7 @@
     "course": "ENGR 42 — Mechanics of Materials",
     "date": "Spring 2025",
     "status": "Completed",
-    "summary": "A semester-long group project for ENGR 42 (Mechanics of Materials). Designed and fabricated a lockback folding knife from spring steel, applying heat treatment and mechanical testing principles learned in class.",
+    "summary": "A semester-long group project for ENGR 42 (Mechanics of Materials). Designed and fabricated a lockback folding knife from spring steel, applying heat treatment and mechanical testing procedures to evaluate strength and durability.",
 
     "designGoals": [
       "Design and fabricate a fully functional lockback folding knife from spring steel",
@@ -88,7 +88,7 @@
     ],
 
     "designProcess": {
-      "text": "The project began with material selection. Our group chose spring steel for its combination of hardness, toughness, and availability. We researched its published heat treatment parameters to define our annealing, quenching, and tempering schedule.\n\nThe blade and lock-bar geometry were designed in SolidWorks, balancing blade length and thickness against the locking mechanism geometry. After fabrication, the heat treatment sequence was carried out: the steel was annealed to relieve internal stresses, then quenched to achieve martensite hardness, and finally tempered to reduce brittleness to an acceptable level.\n\nFinal testing included Rockwell Hardness measurement (HRC), a tensile test on a separately prepared material specimen, and functional chopping and shearing evaluations.",
+      "text": "The project began with material selection. Our group chose spring steel for its combination of hardness, toughness, and availability. We researched its published heat treatment parameters and selected a heat treatment schedule which we tested on sample coupons before applying to the final blade.",
       "media": []
     },
 
@@ -127,7 +127,7 @@
     "course": "ENGR 7",
     "date": "Spring 2023",
     "status": "Completed",
-    "summary": "Programmed a MATLAB script to display a custom image on an 8×8 LED matrix on a Raspberry Pi Sensehat. The image rotates in real-time based on the board's physical orientation, with additional joystick input handling.",
+    "summary": "Programmed a MATLAB script to display a custom image on an 8×8 LED matrix on a Raspberry Pi Sensehat. The image rotates in real-time based on the board's physical orientation, with additional joystick controls for user interaction.",
 
     "designGoals": [
       "Display a custom image on the 8×8 LED matrix of a Raspberry Pi Sensehat using MATLAB",
@@ -137,13 +137,13 @@
     ],
 
     "designProcess": {
-      "text": "The program was written in MATLAB using the Raspberry Pi and Sensehat support packages. The core logic reads orientation data from the Sensehat's onboard IMU and maps pitch and roll angles to one of four 90-degree rotation states for the image matrix.\n\nThe LED matrix accepts an 8×8 pixel color array, so the custom image was pre-scaled and encoded as an RGB matrix in the script. Joystick input was read in a polling loop and used to cycle between different display modes.\n\nA Raspberry Pi setup guide was written to document the hardware configuration, MATLAB package installation, and steps to run the program on a fresh Raspberry Pi.",
+      "text": "The program was written in MATLAB using the Raspberry Pi and Sensehat support packages. The core logic reads orientation data from the Sensehat's onboard IMU and maps pitch and roll to a rotation state for the displayed image, applies a deadband to reduce flicker, and updates the LED matrix accordingly.",
       "media": []
     },
 
     "challenges": {
       "items": [
-        "The Sensehat orientation sensor has some drift at rest, which occasionally caused the display to flicker between two rotation states — resolved by adding a small deadband to the angle thresholds",
+        "The Sensehat orientation sensor has some drift at rest, which occasionally caused the display to flicker between two rotation states — resolved by adding a small deadband to the angle threshold and smoothing the IMU readings",
         "MATLAB's hardware communication with the Raspberry Pi introduced latency in the polling loop, requiring careful loop timing to keep the display responsive",
         "Encoding a legible custom image within an 8×8 pixel constraint required multiple iterations to find something recognizable at low resolution"
       ],
@@ -177,7 +177,7 @@
     "course": "ENGR 7",
     "date": "Spring 2023",
     "status": "Completed",
-    "summary": "Used MATLAB and Simulink to simulate the thermal performance of a tiny house under real climate data, comparing multiple insulation types to identify which configuration minimized interior temperature variation.",
+    "summary": "Used MATLAB and Simulink to simulate the thermal performance of a tiny house under real climate data, comparing multiple insulation types to identify which configuration minimized interior temperature fluctuations and energy use.",
 
     "designGoals": [
       "Build a MATLAB/Simulink model that simulates the thermal behavior of a tiny house using real climate data as input",
@@ -187,7 +187,7 @@
     ],
 
     "designProcess": {
-      "text": "The thermal model was built in Simulink using a lumped-capacitance approach: the tiny house was represented as a thermal resistance-capacitance network, with wall insulation properties determining the resistance values and the interior air mass determining the thermal capacitance.\n\nReal climate data (outdoor temperature over time) was used as the driving input. Different insulation materials were modeled by swapping the resistance values in the network, and the resulting interior temperature profile was simulated for each configuration.\n\nResults were compared on the basis of peak interior temperature, temperature swing, and thermal lag. The best-performing configuration was selected and documented in an IEEE-format report.",
+      "text": "The thermal model was built in Simulink using a lumped-capacitance approach: the tiny house was represented as a thermal resistance-capacitance network, with wall insulation properties gathered from datasheets. We implemented the model, ran simulations using historical climate inputs, and compared insulation performance across scenarios.",
       "media": []
     },
 
