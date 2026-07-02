@@ -24,40 +24,8 @@
       "text": "The mechanical sub-team began by identifying the electronic components that needed to be housed and defining a two-layer stacking arrangement. The top layer holds the Raspberry Pi, AI camera, and UPS; the bottom layer holds the ESC, flight controller board, and battery. This separation kept the wiring manageable and the center of gravity low.\n\nDrone arms were optimized using generative design in Fusion 360, which produced a lightweight curved geometry capable of distributing motor thrust loads across the arm cross-section. The output geometry was then cleaned up for printability and exported for FDM printing in PETG carbon fiber filament.\n\nFEA simulations were run in SolidWorks — both a statics simulation at maximum motor thrust (20N per arm) and a frequency simulation to identify resonant modes that could cause structural failure in flight. The FEA results guided final wall thickness decisions on the arm and center plate.",
       "media": [
         {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUCJrclrNY-CuUou_fCDyOF7Rq8mvnT0CvWXruvyaeunju848BuDmx7CeXGBuswcyaWvqJNyKGdleoTjMUobFMV_HigJVd35hRXnv30aK264bPOFV0hVafSRy2oa087TR9agYVSGeFQ3t-qnzMRBUY-LqNScHvHTg680CKXgYtz2J19eQgUYYzae8_FqTSu_v4eJmLfnL635XO5U_J9pYahHfCRQVRlJKXyA5eLNK7M=w1280",
-          "caption": "Design goals and constraints overview"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBM35S28a-IiV8_HkiCTU4I80ihtGZkr-X2aTgdXddR996NplmdJ5c3GFh4gHHrAwOBx8ginF2vdan50VBJ7aLsoSfeQhAqYrVOZJLzfFVXdHZLCBXRuZUvkFpWAVD-EtAIFsEmkInQpDF1txku0-G3e8E_GK7PNuwT0qxdqCpWzb8KcHxomN3gGVe9ZLlfmUvDSp1nNWcC8Ic32CzQOQA3Ub2s6HJSOp9_HSTzQcQ=w1280",
-          "caption": "Two-layer component layout diagram"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUANnQc-BDyryolxCVSE-jNngub8PNOnDtAqfMXRMKsoL6KDXFOMHbL0j6prazmG2Z8f8pEh6JvkOMKIoGIHhuL4ZSRf5cIIqrYK8loLRW5NhIFJkWudeS-Cwi3geF3t8M5Lj7cvGfJO_ZI1YcMHm2i4dVLyTnRMhleakod8ulHCO9RhPYMq4agjvkhXF6plw0OO50vnN0f-POkLkH0tyEI6RskL4SdHblvK8w=w1280",
-          "caption": "PETG carbon fiber filament used for printing"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBs1G3HXyjeV6VZvOpVwYfiSqt9YCMWR6dMVAEpvYbxVrJG41-BweqEU_GCE63js04EX5G4SMibOHSTzMpOgo6A14fKeHEYzZOayOuyf8QDQnVoq7yqhUkiWxpiVsVWU1fFJL9b6OUkVoeUjLetmROOuGVIGGkLdfMz7q26W614KQUdJZq39wOV7SvcHPPpyiDXthd2QAgJPJ7VEJ8NfTonE-UGLOv6en978v7xJv4=w1280",
-          "caption": "Generative design of drone arm in Fusion 360"
-        },
-        {
           "url": "assets/orama-recording-1.mp4",
           "caption": "CAD and assembly walkthrough"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAM5I0tIX2OxChW0dTc2_jz0xIGVBgWJITfs_Gm-2nH4ZcTrVGHSBYT31V2MV-ANG8-QlE5y6hR4g-4euY9K2A-x64aoo18e-x4wivHOmQZQ_GvgyzfWM7EBeFocrNIdq1JmrzTTgRTzNBgyAJU6k9owmoDWfehrZqm3r-1itofUn3RuKu6l4wNV5LI5mZuorgllZCgNzV0OpoLpI3KIU9tC2SjfjUT-b-nBuoSzu0=w1280",
-          "caption": "SolidWorks statics FEA setup at 20N max thrust"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUAGC_MpQATmJv_aSF8lBJhADksIuxPPAwZ9N5_TCHJ2OqMFXgfVgSR1136g3COX_MQDu5cN_GJVXGUOkxaHAgbA0A7qQsFFMUE6BBqpDnIpevBYA4yaBd1e49PKsweJzo99XhQpHL0KCKgxUlOBfg-43yelnm8hEccqCNOxR-l2k-D-mVWDkl9pqUlei9B3vOu_rg4kYGrt5FIflEmc-qpB7nwcjtHbdWDZk0xhvGA=w1280",
-          "caption": "Statics simulation results showing stress distribution"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUDcdhQv9KDECLtEDr1E_iN3N8OPgxSx0I5tu7p97e8BsCoVKJrUnOxgFF3hw7OKloV59TopKKg4u-ZVNiAtTy_g7RAD8yntIEIyKT62ZUW-8UESwNzztGjdhtVCn25ATAM0QDccdUoN-4ct5oZiTR-GUpoylCqPZh9CYdYMOHLq0Rw427xfLVCoRbIXRzd_znB_TbDJCvI3-AWd_yWH8CRSczrGB4eJe1XK_tQIHJc=w1280",
-          "caption": "3D printed components prior to assembly"
-        },
-        {
-          "url": "https://lh3.googleusercontent.com/sitesv/AA5AbUBdXphCRmSM7yIaU9a6O_AZuJ8qgxrriNHqp99lEqUeGzrxQ9HdDP8BeERpOlrOuO1QocsRvgpMgFyaOo6g8_FXY8awYq3EWhQLIn0a99VXNbFA1wG0bdwVVNm2LM9PiMDuW0TbxFtUgjstrX9WIbO7BH81uUzaQCpaZmEV4ZJoowxGh9s8U_QTQCxp9Ig57uOu1-W7GLItOk_ZWOJB7_j0CMKAduvAXjti4WgO=w1280",
-          "caption": "Finished drone arms"
         }
       ]
     },
