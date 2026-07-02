@@ -5,7 +5,7 @@
     "subtitle": "Autonomous AI Drone — Mechanical Frame Design",
     "tags": ["Fusion 360", "SolidWorks", "PETG CF", "3D Printing", "FEA", "Generative Design"],
     "course": "Interdisciplinary Capstone",
-    "date": "Summer 2023",
+    "date": "Summer 2025",
     "status": "Completed",
     "image": "assets/orama-fea-frequency.png",
     "imageAlt": "SolidWorks frequency FEA simulation of Project Orama drone",
@@ -107,7 +107,7 @@
     "subtitle": "Mechanics of Materials · Spring Steel · Heat Treatment",
     "tags": ["Spring Steel", "Heat Treatment", "Metallurgy", "Rockwell Hardness", "SolidWorks"],
     "course": "ENGR 42 — Mechanics of Materials",
-    "date": "Fall 2023",
+    "date": "Spring 2025",
     "status": "Completed",
     "summary": "A semester-long group project for ENGR 42 (Mechanics of Materials). Designed and fabricated a lockback folding knife from spring steel, applying heat treatment and mechanical testing principles learned in class.",
 
